@@ -29,3 +29,7 @@ function addTodo() {
 function deleteItem(e) {
     e.parentNode.remove()
 }
+
+function deleteAll() {
+    list.innerHTML = ''
+}
