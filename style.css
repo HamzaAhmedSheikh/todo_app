@@ -11,3 +11,19 @@
     padding-top: 110px;
 }
 
+li {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;  
+    padding-left: 12px; 
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;        
+}
+
+.input {
+    margin-bottom: 5px;
+    padding: 16px;
+}
+
+.btn {
+    margin-top: -4px;
+}
