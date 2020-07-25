@@ -1,29 +1,101 @@
 
 .navbar-brand {
-    font-size: 32px;
+    font-size: 26px;
 }
 
 #list {
-    list-style-type: none;     
+    list-style-type: none;  
+    padding: 10px;   
+    width: 490px;
 }
 
 .div {
-    padding-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    text-align: center;    
 }
 
 li {
     border-bottom: 1px solid black;
     margin-bottom: 10px;  
     padding-left: 12px; 
-    font-family: 'Roboto Mono', monospace;
-    font-size: 25px;        
+    font-family: 'Roboto Mono', monospace;    
+    font-size: 22px;    
 }
+    
 
 .input {
     margin-bottom: 5px;
-    padding: 16px;
+    padding: 16px;    
+}
+
+#todo-item {
+    width: 320px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;      
 }
 
 .btn {
     margin-top: -4px;
+}
+
+.butt {
+    margin-left: 10px;
+    padding-left: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.btns {
+    margin-top: 10px;
+    padding: 6px;
+    width: 12%;
+    margin: 10px;    
+}
+
+/* .li {
+    width: 590px;
+} */
+
+.text {
+    color: white;
+    text-align: center;
+    /* border: 1px solid red;
+    background-color: green;
+    padding: 10px;
+    width: 505px; */
+}
+
+.ul {
+    width: 520px;
+}
+
+@media (max-width: 575.98px) { 
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .div {
+        padding-top: 80px;
+        text-align: center
+    }    
+
+    #todo-item {
+        width: 250px;
+        font-size: 20px;
+        font-family: 'Roboto Mono', monospace;      
+    }
+
+    #list {
+        width: 390px;
+    }
+
+    .btns {
+        margin-top: 10px;
+        padding: 6px;
+        width: 33%;
+        margin: 10px;
+    }
 }
