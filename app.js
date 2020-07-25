@@ -17,9 +17,18 @@ function addTodo() {
       delBtn.setAttribute("onclick", "deleteItem(this)")
       delBtn.appendChild(delText)
 
-    li.appendChild(delBtn)        
-    list.appendChild(li)
+    //create edit button 
+    var editBtn = document.createElement("button")
+    var editText = document.createTextNode("EDIT")  
+    
+       editBtn.setAttribute("class", 'btn btn-primary btn-sm')
+       editBtn.setAttribute("onclick", "editItem(this)")
+       editBtn.appendChild(editText)       
 
+    li.appendChild(delBtn)  
+    li.appendChild(editBtn)
+
+    list.appendChild(li)
     list.setAttribute('class', 'list-group-item');
 
     todo_item.value = ""
@@ -32,4 +41,11 @@ function deleteItem(e) {
 
 function deleteAll() {
     list.innerHTML = ''
+}
+
+function editItem(e) {
+    var val = e.parentNode.firstChild.nodeValue 
+    var editValue = prompt("Enter edit value", val)
+
+    e.parentNode.firstChild.nodeValue = editValue
 }
