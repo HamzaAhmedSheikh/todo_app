@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css" />
     <title> TODO APP </title>
 </head>
 <body>
-    <h1> Hello World </h1>
+ 
+   <div style="background-color: teal;">
+    <div class="container">
+        <input type="text" id="todo-item" placeholder="Enter Todo">
+        <button type="button"
+                class="btn btn-outline-success"
+                onclick="addTodo()" > Add Item </button>
+      
+        
+          <ul class="list-group" id="list">            
+          </ul>     
+     </div>
+    </div> 
+    
+    
+    <script src="./app.js"></script>
 </body>
 </html>
