@@ -11,11 +11,21 @@ function addTodo() {
 
     // create delete button    
     var delBtn = document.createElement("button")
+    var delText = document.createTextNode("DELETE")
 
-    
+      delBtn.setAttribute("class", 'btn btn-primary btn-sm')
+      delBtn.setAttribute("onclick", "deleteItem(this)")
+      delBtn.appendChild(delText)
+
+    li.appendChild(delBtn)        
     list.appendChild(li)
 
     list.setAttribute('class', 'list-group-item');
 
     todo_item.value = ""
+}
+
+
+function deleteItem(e) {
+    e.parentNode.remove()
 }
