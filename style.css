@@ -53,6 +53,7 @@ li {
     padding: 6px;
     width: 12%;
     margin: 10px;    
+    font-size: 20px;
 }
 
 /* .li {
@@ -97,5 +98,6 @@ li {
         padding: 6px;
         width: 33%;
         margin: 10px;
+        font-size: 16px
     }
 }
